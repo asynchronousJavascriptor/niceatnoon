@@ -1,0 +1,83 @@
+@font-face {
+    font-family: chacha;
+    src: url(./64eda5e5fdd71ddd3dbbf609_apercu-regular.woff2);
+}
+
+@font-face {
+    font-family: chachi;
+    src: url(./64eda5e581cb8e58ed55dea5_apercu-medium.woff2);
+}
+
+@font-face {
+    font-family: chacha2;
+    src: url(./6479b994523a6279a03d4da7_Siaga-Bold.woff2);
+}
+
+@font-face {
+    font-family: larken;
+    src: url(./LarkenDEMO-Bold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: chacha;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.part3{
+    display: flex;
+    gap: 20px;
+}
+
+.part3 h4{
+    padding: 7px 15px;
+    border: 1px solid #000;
+    font-size: 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.part3 h4:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+#n{
+
+    animation-name: rotate;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    100%{
+        rotate: 360deg;
+    }
+}
+
+
+.hero-section{
+    display: flex;
+    margin-top: 50px;
+    padding: 20px 50px;
+
+}
+
+.hero-section h1{
+    font-size: 100px;
+    font-family: larken;
+    line-height: 1;
+}
