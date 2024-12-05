@@ -105,3 +105,78 @@ nav{
     border: none;
     border-radius: 5px;
 }
+
+.image-section{
+    display: flex;
+    gap: 30px;
+    padding: 40px 0;
+    transform: translateX(-20%);
+}
+
+.image-section img{
+    height:650px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 120px;
+}
+
+.section2{
+    margin-top: 10vh;
+    min-height: 100vh;
+    padding: 40px 60px;
+}
+
+.section2 h1{
+    font-size: 9.5vw;
+    text-transform: uppercase;
+    font-family: chacha2;
+    line-height: 1;
+    text-align: center;
+    position: relative;
+}
+
+.section2 h1::after{
+    content: "Gotta see 'm all";
+    font-family: chacha;
+    background-color: #F4C728;
+    font-size: 17px;
+    text-transform: none;
+    padding: 25px 30px;
+    border-radius: 30px;
+    position: absolute;
+    bottom: -8%;
+    right: 25%;
+    rotate: -10deg;
+}
+
+.section2-image-container{
+    margin-top: 10vh;
+    width: 100%;
+    height: 65vh;
+    border-radius: 30px;
+    background-image: url(https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/65492b562e62e676d4159713_NS_Wayfinding%20_%20NaN-p-2600.jpg);
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.7s;
+}
+
+.section2-image-container img{
+    height: 65%;
+    opacity: 0;
+    transition: all ease 0.7s;
+    border-radius: 0;
+}
+
+.section2-image-container:hover{
+    border-radius: 120px;
+    background-size: 110%;
+}
+
+.section2-image-container:hover img{
+    opacity: 1;
+    border-radius: 70px;
+
+}
