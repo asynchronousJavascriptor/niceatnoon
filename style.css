@@ -32,11 +32,20 @@ html,body{
 body{
     background-color: #E4E4E4;
 }
+
+#main{
+    padding-top: 8vh;
+}
 nav{
     display: flex;
     align-items:center ;
     justify-content: space-between;
     padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    background-color: #E4E4E4;
 }
 
 .part3{
@@ -121,10 +130,19 @@ nav{
 }
 
 .section2{
-    margin-top: 10vh;
+    margin-top: 5vh;
     min-height: 100vh;
     padding: 40px 60px;
 }
+.section2-para{
+    margin-bottom: 15vh;
+
+}
+.section2-para p{
+    font-size: 26px;
+    line-height: 1.4;
+}
+
 
 .section2 h1{
     font-size: 9.5vw;
@@ -179,4 +197,47 @@ nav{
     opacity: 1;
     border-radius: 70px;
 
+}
+
+.section3{
+    height: 100vh;
+    width: 100%;
+    padding: 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.card{
+    height: 500px;
+    width: 380px;
+}
+
+.card .card1{
+    height: 60%;
+    width: 100%;
+    transition: all ease 0.5s;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.card .card1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .card2{
+    height: 40%;
+    width: 100%;
+    border-radius: 0px;
+    background-color: #AA81B7;
+    transition: all ease 0.5s;
+
+}
+
+.card:hover .card1{
+    border-radius: 80px;
+}
+.card:hover .card2{
+    border-radius: 80px;
 }
